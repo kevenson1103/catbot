@@ -1,7 +1,7 @@
 const axios = require('axios');
 const Discord = require('discord.js');
 
-module.exports.run = async (client, message, args, bot) => {
+module.exports.run = async (client, message, args) => {
     axios.get(`https://cat-fact.herokuapp.com/facts/random`)
     .then((fact) => {
         message.reply(`Did you know: ${fact.data.text}`)
