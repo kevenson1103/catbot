@@ -1,6 +1,8 @@
 # CatBot
 A Discord bot made for anything cat related!. The bot is made using [Discord.js](https://discord.js.org/#/)
 
+![Lilly](https://cdn.discordapp.com/attachments/973719071352823838/973720104007237672/279936345_422397323222930_7232341584016774401_n.png)
+
 # Creators
 * kevenson
 
