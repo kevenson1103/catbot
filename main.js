@@ -3,17 +3,21 @@ const tStart = +new Date()
 const { Client, Collection, Intents } = require('discord.js');
 const Discord = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+const fs = require('fs');
 
 const colors = require('colors/safe');
-const fs = require('fs');
+const cats = require('cat-ascii-faces')
+const catMe = require('cat-me')
 
 const config = require('./config.json')
 
 
 client.on('ready', () => {
     console.log(colors.green(`${client.user.username} is online and active in ${client.guilds.cache.size} servers!`))
+    client.user.setActivity(`Love Lilly ${cats()}`)
     const tEnd = +new Date()
     console.log(colors.green(`Init Time: ${tEnd - tStart}ms`))
+    console.log(catMe())
     setTimeout(() => {
         console.log(colors.green(`////////////////////////////////////////`))
     }, 1500)
@@ -47,6 +51,17 @@ fs.readdir("./dsc/", (err, files) => { //This block of code reads each .js file 
 client.on("messageCreate", async message => {
     if(message.channel.type === "dm") return;
     if(message.author.id === client.user.id) return;
+
+    if (message.mentions.has(client.user)) {
+        let random = Math.floor(Math.random() * 2); {
+            if(random === 0) {
+                message.reply(`hi! ${cats()}`)
+            }
+            if(random === 1) {
+                message.reply(`${catMe()}`)
+            }
+        }
+    }
 
     let prefixes = JSON.parse(fs.readFileSync("./prefixes.json", "utf8"));
     if(!prefixes[message.guild.id]){

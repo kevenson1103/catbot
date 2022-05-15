@@ -2,7 +2,7 @@ const axios = require('axios');
 const Discord = require('discord.js');
 const cats = require('cat-ascii-faces')
 
-module.exports.run = async (client, message, args, bot) => {
+module.exports.run = async (client, message, args) => {
     axios.get(`https://api.thecatapi.com/v1/images/search`)
     .then((cat) => {
         const embed = new Discord.MessageEmbed()
