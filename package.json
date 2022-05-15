@@ -1,0 +1,11 @@
+{
+  "name": "catbot",
+  "version": "1.0.0",
+  "description": "cat",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kevenson",
+  "license": "ISC"
+}
