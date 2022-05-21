@@ -2,9 +2,9 @@ const axios = require('axios');
 const Discord = require('discord.js');
 
 module.exports.run = async (client, message, args) => {
-    axios.get(`https://cat-fact.herokuapp.com/facts/random`)
+    axios.get(`https://catfact.ninja/fact`)
     .then((fact) => {
-        message.reply(`Did you know: ${fact.data.text}`)
+        message.reply(`${fact.data.fact}`)
     })
     .catch((err) => {
         message.reply(`There was an error getting your fact!`)

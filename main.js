@@ -53,12 +53,13 @@ client.on("messageCreate", async message => {
     if(message.author.id === client.user.id) return;
 
     if (message.mentions.has(client.user)) {
-        let random = Math.floor(Math.random() * 2); {
+        if(message.content.toString().includes(`@everyone`)) { return }
+        if(message.content.toString().includes(`@here`)) { return }
+        let random = Math.floor(Math.random() * 1); {
             if(random === 0) {
                 message.reply(`hi! ${cats()}`)
-            }
-            if(random === 1) {
-                message.reply(`${catMe()}`)
+            } else {
+                return
             }
         }
     }
