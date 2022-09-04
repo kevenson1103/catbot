@@ -46,7 +46,7 @@ fs.readdir("./dsc/", (err, files) => { //This block of code reads each .js file 
     })
 })
 
-// - 
+// ---------
 
 client.on("messageCreate", async message => {
     if(message.channel.type === "dm") return;
