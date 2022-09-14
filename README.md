@@ -6,6 +6,9 @@ A Discord bot made for anything cat related!. The bot is made using [Discord.js]
 # Creators
 * kevenson
 
+# Contributors
+* kisman2000
+
 # Dedications
 * Ninjafig
 * Lilly <3
