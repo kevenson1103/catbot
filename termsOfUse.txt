@@ -1,7 +1,0 @@
-// TERMS OF USE \\
-
-By adding this bot to your Discord server, or using it within a discord server you agree that:
-
-· Said server is not used for malicious intent, or any reasons that may be against the Discord Terms of Service
-· You are above the age of 13
-· You do not use this bot for malicious intent
