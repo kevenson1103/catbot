@@ -13,7 +13,6 @@ module.exports.run = async (client, message, args) => {
         .setImage(`${cat.data[0].url}`)
         .setTimestamp()
         message.channel.send({embeds:[embed]})
-
         
         fs.readFile('./dat/catUsage.txt', 'utf8', (err, data) => {
             if(err) { console.log(err) }

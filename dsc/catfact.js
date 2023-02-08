@@ -1,5 +1,6 @@
 const axios = require('axios');
 const Discord = require('discord.js');
+const fs = require('fs');
 
 module.exports.run = async (client, message, args) => {
     axios.get(`https://catfact.ninja/fact`)
@@ -9,6 +10,15 @@ module.exports.run = async (client, message, args) => {
     .catch((err) => {
         message.reply(`There was an error getting your fact!`)
         console.log(err)
+    })
+
+    fs.readFile('./dat/catFactUsage.txt', 'utf8', (err, data) => {
+        if(err) { console.log(err) }
+
+        let newData = new Uint8Array(Buffer.from(`${+data + 1}`))
+        fs.writeFile('./dat/catFactUsage.txt', newData, (err) => {
+            if(err) { console.log(err) }
+        })
     })
 }
 
