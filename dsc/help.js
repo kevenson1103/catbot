@@ -12,6 +12,7 @@ module.exports.run = async (client, message, args) => {
 >catfact/>ctafact/>fact
 >help/>cmds/>commands
 >prefix/>pre
+>stats
 `)
     .setThumbnail(`https://cdn.discordapp.com/attachments/973719071352823838/973720104007237672/279936345_422397323222930_7232341584016774401_n.png`)
     .setTimestamp()
