@@ -6,13 +6,15 @@ module.exports.run = async (client, message, args) => {
     .setColor(0xff00d0)
     .setTitle(`${cats()}`)
     .setDescription(`
->ping/>pong/>test
->cat/>cta
->catname/>catnames/>name
->catfact/>ctafact/>fact
->help/>cmds/>commands
->prefix/>pre
->stats
+**Cat Commands:**
+>cat/>cta **//** Shows a random cat pic!
+>catname/>catnames/>name **//** Gives you name suggestions for cats!
+>catfact/>ctafact/>fact **//** Gives you a random cat fact!
+**Other commands:** 
+>ping/>pong/>test **//** Gives you the bots current ping
+>help/>cmds/>commands **//** Shows this command
+>prefix/>pre { prefix } **//** changes the prefix for your server
+>stats **//** Shows the bots stats
 `)
     .setThumbnail(`https://cdn.discordapp.com/attachments/973719071352823838/973720104007237672/279936345_422397323222930_7232341584016774401_n.png`)
     .setTimestamp()
