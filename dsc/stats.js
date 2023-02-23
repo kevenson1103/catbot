@@ -31,7 +31,7 @@ const uptime = `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} 
             
         )
         .setFooter({
-            text: `This command is new! Usage data is only from after Feb 8th, 2023.`
+            text: `All statistics are updated in real-time! Try using a command and checking the stats after!`
         })
         .setTimestamp()
         message.channel.send({embeds:[embed]})
