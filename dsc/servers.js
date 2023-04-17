@@ -12,13 +12,13 @@ module.exports.run = async (client, message, args) => {
     const forwardId = 'forward'
     const backButton = new MessageButton({
       style: 'SECONDARY',
-      label: 'Next Page',
+      label: 'Previous Page',
       emoji: '⬅️',
       customId: backId
     })
     const forwardButton = new MessageButton({
       style: 'SECONDARY',
-      label: 'Previous Page',
+      label: 'Next Page',
       emoji: '➡️',
       customId: forwardId
     })
